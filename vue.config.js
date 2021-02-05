@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: "/dd-vs.github.io",
+  publicPath: "/dd-vs/",
 };

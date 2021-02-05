@@ -1,0 +1,55 @@
+<template>
+  <header>
+    <nav class="navbar navbar-expand-md">
+      <div class="container">
+        <router-link to="/home" class="navbar-brand">
+          <!-- <img src="" alt="logo" /> -->
+          <h1>D D</h1>
+        </router-link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          @click="toggle()"
+          ref="toggleBtn"
+        >
+          <i class="fas fa-align-justify" v-show="display === 'none'"></i>
+          <i class="fas fa-times-circle" v-show="display != 'none'"></i>
+        </button>
+        <div
+          class="navbar-collapse"
+          id="navbarCollapse"
+          :style="{ display: display }"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0"></form>
+        </div>
+      </div>
+    </nav>
+    <div class="clear-fix"></div>
+  </header>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      display: "none",
+    };
+  },
+  methods: {
+    toggle() {
+      // document.getElementById("navbarCollapse").style.display = "block";
+      this.display === "none"
+        ? (this.display = "block")
+        : (this.display = "none");
+    },
+  },
+};
+</script>
