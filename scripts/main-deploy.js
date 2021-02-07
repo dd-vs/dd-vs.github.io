@@ -5,8 +5,7 @@ const fullDate =
   "Auto Deployed on " +
   date.getDate() +
   " - " +
-  parseInt(date.getMonth()) +
-  parseInt(1) +
+  date.getMonth()++ +
   " - " +
   date.getFullYear() +
   " at " +
