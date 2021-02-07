@@ -45,7 +45,6 @@ export default {
   },
   methods: {
     toggle() {
-      // document.getElementById("navbarCollapse").style.display = "block";
       this.display === "none"
         ? (this.display = "block")
         : (this.display = "none");

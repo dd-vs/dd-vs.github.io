@@ -20,6 +20,9 @@ section {
   color: #fff;
   height: 550px;
 }
+.navbar-collapse {
+  transition: all 300ms ease-in-out;
+}
 .navbar-collapse a {
   color: #fff;
   transition: all 300ms ease-in-out;
