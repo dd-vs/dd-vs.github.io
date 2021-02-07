@@ -6,7 +6,7 @@ const fullDate =
   date.getDate() +
   " - " +
   parseInt(date.getMonth()) +
-  1 +
+  parseInt(1) +
   " - " +
   date.getFullYear() +
   " at " +
