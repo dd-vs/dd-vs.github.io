@@ -25,7 +25,7 @@ const fullDate =
     await execa("git", ["--work-tree", folderName, "commit", "-m", fullDate]);
     console.log("Pushing to main...");
     await execa("git", ["push", "origin", "HEAD:main", "--force"]);
-    await execa("rmdir /q /s", [folderName]);
+    // await execa("rmdir /q /s", [folderName]);
     await execa("git", ["checkout", "-f", "master"]);
     await execa("git", ["branch", "-D", "main"]);
     console.log("Successfully deployed");
