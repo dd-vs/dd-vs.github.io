@@ -2,7 +2,17 @@ const execa = require("execa");
 const fs = require("fs");
 const date = new Date();
 const fullDate =
-  date.getDate() + " - " + date.getMonth() + " - " + date.getFullYear();
+  "Auto Deployed on " +
+  date.getDate() +
+  " - " +
+  date.getMonth() +
+  1 +
+  " - " +
+  date.getFullYear() +
+  " at " +
+  date.getHours() +
+  " : " +
+  date.getMinutes();
 
 (async () => {
   try {
@@ -15,7 +25,7 @@ const fullDate =
     await execa("git", ["--work-tree", folderName, "commit", "-m", fullDate]);
     console.log("Pushing to main...");
     await execa("git", ["push", "origin", "HEAD:main", "--force"]);
-    await execa("rmdir", [folderName]);
+    await execa("rmdir /Q /S", [folderName]);
     await execa("git", ["checkout", "-f", "master"]);
     await execa("git", ["branch", "-D", "main"]);
     console.log("Successfully deployed");
