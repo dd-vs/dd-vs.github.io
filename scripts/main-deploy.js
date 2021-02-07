@@ -1,9 +1,8 @@
 const execa = require("execa");
 const fs = require("fs");
 const date = new Date();
-const day = date.getDate();
-const month = date.getMonth();
-const year = date.getFullYear();
+const fullDate =
+  date.getDate() + " - " + date.getMonth() + " - " + date.getFullYear();
 
 (async () => {
   try {
@@ -13,13 +12,7 @@ const year = date.getFullYear();
     // Understand if it's dist or build folder
     const folderName = fs.existsSync("dist") ? "dist" : "build";
     await execa("git", ["--work-tree", folderName, "add", "--all"]);
-    await execa("git", [
-      "--work-tree",
-      folderName,
-      "commit",
-      "-m",
-      day + "-" + month + "-" + year,
-    ]);
+    await execa("git", ["--work-tree", folderName, "commit", "-m", fullDate]);
     console.log("Pushing to main...");
     await execa("git", ["push", "origin", "HEAD:main", "--force"]);
     await execa("rmdir", [folderName]);
