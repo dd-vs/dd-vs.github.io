@@ -2,11 +2,9 @@
   <header>
     <nav class="navbar navbar-expand-md">
       <div class="container">
-        <router-link to="/home" class="navbar-brand">
-          <!-- <img src="" alt="logo" /> -->
-          <h1>D D</h1>
-        </router-link>
-        <button
+        <!-- <img src="" alt="logo" /> -->
+        <h1>D D</h1>
+        <span
           class="navbar-toggler"
           type="button"
           @click="toggle()"
@@ -14,7 +12,7 @@
         >
           <i class="fas fa-align-justify" v-show="display === 'none'"></i>
           <i class="fas fa-times-circle" v-show="display != 'none'"></i>
-        </button>
+        </span>
         <div
           class="navbar-collapse"
           id="navbarCollapse"
@@ -22,10 +20,16 @@
         >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0"></form>
