@@ -59,12 +59,12 @@ export default {
           text2: "app Development",
         },
         {
-          img: "/images/coding.svg",
+          img: "/images/webdevelopment.svg",
           text1: "Web",
           text2: "Development",
         },
         {
-          img: "/images/walking.svg",
+          img: "/images/e-commerce.svg",
           text1: "E-Commerce",
           text2: "Solutions",
         },

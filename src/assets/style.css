@@ -28,7 +28,7 @@ section.relative {
 .home-banner {
   background: linear-gradient(45deg, #8911fc 25%, #6e0ff5 65%);
   color: #fff;
-  height: 550px;
+  min-height: 550px;
 }
 .navbar-collapse a {
   color: #e2d6ef;
@@ -53,7 +53,9 @@ section.relative {
     top: -18px;
     right: 15px;
   } */
-
+  .hero-text {
+    font-size: 2rem;
+  }
   .navbar-nav .nav-link {
     border-bottom: 1px solid rgba(137, 17, 252, 0.3);
     margin: 0 25px;
@@ -61,11 +63,15 @@ section.relative {
     line-height: 1.25;
   }
 }
+@media (min-width: 769px) {
+  .hero-text {
+    font-size: 3.5rem;
+  }
+}
 .v-center {
   align-self: center;
 }
 .hero-text {
-  font-size: 3.5rem;
   line-height: 1.5;
 }
 .-txt- {
