@@ -1,9 +1,15 @@
 <template>
   <section class="home-banner relative">
     <DParticles />
+    <DBubbles />
     <TheHeader />
     <div class="container-fluid">
-      <carousel :items-to-show="1" transition="500ms" :wrapAround="true">
+      <carousel
+        :items-to-show="1"
+        transition="500ms"
+        :wrapAround="true"
+        :breakpoints="breakpoints"
+      >
         <slide v-for="slide in slides" :key="slide">
           <div class="row">
             <div class="col-md-6 -txt-">
@@ -24,27 +30,20 @@
         </template>
       </carousel>
     </div>
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 -txt-"></div>
-        <div class="col-md-6 v-center">
-          <h1 class="hero-text"></h1>
-        </div>
-      </div>
-    </div>
   </section>
 </template>
 
 <script>
 import TheHeader from "./components/UI/TheHeader.vue";
 import DParticles from "./components/UI/DParticles.vue";
+import DBubbles from "./components/UI/DBubbles.vue";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 export default {
   components: {
     TheHeader,
     DParticles,
+    DBubbles,
     Carousel,
     Slide,
     Pagination,
@@ -69,6 +68,18 @@ export default {
           text2: "Solutions",
         },
       ],
+      breakpoints: {
+        // 700px and up
+        700: {
+          itemsToShow: 1,
+          snapAlign: "center",
+        },
+        // 1024 and up
+        1024: {
+          itemsToShow: 1,
+          snapAlign: "start",
+        },
+      },
     };
   },
 };
