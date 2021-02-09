@@ -20,7 +20,9 @@
         >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <router-link :to="{ name: 'Home' }" class="nav-link"
+                >Home</router-link
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>

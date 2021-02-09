@@ -4,7 +4,11 @@ body {
   font-family: "Noto Sans", sans-serif;
 }
 header {
-  margin-bottom: 10px;
+  position: absolute;
+  left: 20px;
+  top: 0;
+  right: 20px;
+  z-index: 9;
 }
 section {
   padding: 10px;
@@ -14,8 +18,12 @@ section {
 section.relative {
   position: relative;
 }
+.initial {
+  padding-top: 75px;
+}
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
 }
 .navbar button:active,
 .navbar button:focus {
@@ -34,8 +42,12 @@ section.relative {
   color: #e2d6ef;
   transition: all 300ms ease-in-out;
 }
-.navbar-collapse a:hover {
+.navbar-collapse a:hover,
+a.router-link-active {
   color: #ffd63f;
+}
+a.router-link-active:hover {
+  color: #fc11b4;
 }
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 1rem;
