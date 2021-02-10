@@ -65,7 +65,7 @@ a.router-link-active:hover {
     top: -18px;
     right: 15px;
   } */
-  .hero-text {
+  h1.hero-text {
     font-size: 2rem;
   }
   .navbar-nav .nav-link {
@@ -76,15 +76,28 @@ a.router-link-active:hover {
   }
 }
 @media (min-width: 769px) {
-  .hero-text {
+  h1.hero-text {
     font-size: 3.5rem;
   }
 }
 .v-center {
   align-self: center;
 }
-.hero-text {
+h1.hero-text {
   line-height: 1.5;
+}
+p.hero-text {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+button.hero-text {
+  border-radius: 0;
+  background: #fff;
+  color: #6f0bfd;
+  font-weight: 600;
+}
+button.hero-text:hover {
+  color: #fc11b4;
 }
 .-txt- {
   text-align: center;

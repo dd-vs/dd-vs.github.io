@@ -16,9 +16,12 @@
             </div>
             <div class="col-md-6 v-center">
               <h1 class="hero-text">
-                {{ slide.text1 }} <br />
-                {{ slide.text2 }}
+                {{ slide.text1 }}
               </h1>
+              <p class="hero-text">
+                {{ slide.text2 }}
+              </p>
+              <button class="btn hero-text">Know More >></button>
             </div>
           </div>
         </slide>
@@ -51,18 +54,20 @@ export default {
       slides: [
         {
           img: "/images/mobileAppWireframe.svg",
-          text1: "iOS & Android Mobile",
-          text2: "app Development",
+          text1: "Mobile Apps",
+          text2:
+            "Implement your next big idea in an iPhone or an Android device",
         },
         {
           img: "/images/webdevelopment.svg",
-          text1: "Web",
-          text2: "Development",
+          text1: "Web Development",
+          text2: "Build your online presence with a bespoke website",
         },
         {
           img: "/images/e-commerce.svg",
           text1: "E-Commerce",
-          text2: "Solutions",
+          text2:
+            "Grocery, Supermarket, Restaurants. Provide you all it takes to run your business online.",
         },
       ],
       breakpoints: {
