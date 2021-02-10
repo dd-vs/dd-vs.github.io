@@ -95,6 +95,7 @@ button.hero-text {
   background: #fff;
   color: #6f0bfd;
   font-weight: 600;
+  transition: all 300ms ease-in-out;
 }
 button.hero-text:hover {
   color: #fc11b4;
