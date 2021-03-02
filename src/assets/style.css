@@ -19,7 +19,10 @@ section.relative {
   position: relative;
 }
 .initial {
-  padding-top: 75px;
+  padding-top: 73px;
+}
+.theme-bg {
+  background-color: #8911fc;
 }
 .navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);

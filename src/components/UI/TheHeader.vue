@@ -18,7 +18,7 @@
           id="navbarCollapse"
           :style="{ display: display }"
         >
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto -txt">
             <li class="nav-item">
               <router-link :to="{ name: 'Home' }" class="nav-link"
                 >Home</router-link
@@ -29,6 +29,11 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" :to="{ name: 'Components' }"
+                >Components</router-link
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>

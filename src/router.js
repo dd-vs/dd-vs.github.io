@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 import TheHome from "./pages/TheHome.vue";
+import TheComponents from "./pages/TheComponents.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -8,6 +9,7 @@ const router = createRouter({
   routes: [
     { path: "/", redirect: { name: "Home" } },
     { path: "/home", name: "Home", component: TheHome },
+    { path: "/components", name: "Components", component: TheComponents },
   ],
   scrollBehavior(from, to, savedPossition) {
     if (savedPossition) {
