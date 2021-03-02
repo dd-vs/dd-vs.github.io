@@ -36,6 +36,21 @@ section.relative {
   color: #fff;
   /* border: 1px solid #ffffff; */
 }
+.nav-tabs li {
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+.nav-link {
+  margin-bottom: -1px;
+}
+.tab-content {
+  border-left: 1px solid #e4e4e4;
+  border-right: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
 .home-banner {
   background: linear-gradient(45deg, #8911fc 25%, #6e0ff5 65%);
   color: #fff;
