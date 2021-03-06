@@ -21,7 +21,7 @@
           <ul class="navbar-nav ml-auto -txt">
             <li class="nav-item">
               <router-link :to="{ name: 'Home' }" class="nav-link"
-                >Home</router-link
+                >Index</router-link
               >
             </li>
             <li class="nav-item">
